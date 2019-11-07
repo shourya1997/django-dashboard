@@ -19,4 +19,3 @@ def scrape():
         image_source = [x.strip() for x in re.split(r' .[0-9]*[w][,]| .[0-9]*[w]', image_source)] # this splits the url and removes '1600w' from url fetched and removes whitespaces also
         image_source = image_source[:len(image_source)-1]
         image_source = image_source[1]
-scrape()
