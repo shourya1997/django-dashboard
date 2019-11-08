@@ -5,7 +5,7 @@ from django.conf import settings
 
 class Headline(models.Model):
     title = models.CharField(max_length=120)
-    imgae = models.ImageField()
+    image = models.ImageField()
     url = models.TextField()
 
     def __str__(self):
