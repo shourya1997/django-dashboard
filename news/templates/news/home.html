@@ -7,7 +7,7 @@
 <body>
 	<div class="jumbotron">
 		<h1>Welcome to your dashboard</h1>
-		{% if hide_me == True %}
+		{% if hide_me == False %}
 		<p>Your next scrape is in {{ next_scrape }} hours.</p>
 		{% else %}
 		<form method="POST" action="{% url 'scrape' %}">
